@@ -1,7 +1,7 @@
 <?php
 /**
  * Template Name: Plain Template
- * Description: A Page Template that hides the header graphic
+ * Description: A Page Template that hides the header graphic and sidebar
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages

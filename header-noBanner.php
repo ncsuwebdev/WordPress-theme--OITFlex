@@ -74,7 +74,7 @@
 
 </head>
 
-<body  <?php body_class(); ?>>
+<body class="one-column">
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 			<hgroup>    

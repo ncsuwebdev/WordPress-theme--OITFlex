@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Feature Slider Template
- * Description: A Page Template that displays a full-width slider of all images attached to the page.
+ * Template Name: No Sidebar Template
+ * Description: A Page Template that removes all sidebars for a full-width content area.
  *
  * @package WordPress
  * @subpackage Twenty_Eleven
@@ -11,9 +11,6 @@
 get_header(oneCol); ?>
 
 		<div id="primary">
-			
-			<?php get_page ($page_id); ?>
-			 <?php echo do_shortcode('[portfolio_slideshow id=' . $page_id . ']'); ?>
              
              <div id="content" role="main">
 

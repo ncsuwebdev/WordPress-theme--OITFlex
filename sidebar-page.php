@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Sidebar Template
+ * Template Name: Custom Sidebar Template
  * Description: A Page Template that adds a custom sidebar to pages
  *
  * @package WordPress
