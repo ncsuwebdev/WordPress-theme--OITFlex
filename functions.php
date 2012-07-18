@@ -195,11 +195,19 @@ add_action( 'wp_loaded', 'self_deprecating_sidebar_registration' );
 
 // THEME UPDATES
 
+// load the theme updater core script
+// this checks for theme updates using the public GitHub repository
+if(is_admin() && file_exists(dirname(__FILE__).'/inc/updater-plugin.php')) 
+	include_once(dirname(__FILE__).'/inc/updater-plugin.php');
+
+define('THEME_VERSION', $theme_data['Version']);
+
+
 //Initialize the update checker.
-require 'theme-updates/theme-update-checker.php';
-$example_update_checker = new ThemeUpdateChecker(
-    'oitflex',
-    'http://resources.wordpress.ncsu.edu/oitflex/info.json'
-);
+//require 'theme-updates/theme-update-checker.php';
+//$example_update_checker = new ThemeUpdateChecker(
+//    'oitflex',
+//    'http://resources.wordpress.ncsu.edu/oitflex/info.json'
+//);
 
 ?>
