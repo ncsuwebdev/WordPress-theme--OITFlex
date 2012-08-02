@@ -1,7 +1,7 @@
 <?php
 /**
- * Template Name: Plain Template
- * Description: A Page Template that hides the header graphic and sidebar
+ * Template Name: No Banner Template
+ * Description: A Page Template that hides the header graphic. Sidebar remains
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -13,7 +13,7 @@
  * @since Twenty Eleven 1.0
  */
 
-get_header(plain); ?>
+get_header(noBanner); ?>
 
 		<div id="primary">
 			<div id="content" role="main">

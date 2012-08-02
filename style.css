@@ -100,15 +100,15 @@ div #secondary, .singular #secondary {
 	
 }
 .left-sidebar #primary #content {
-	margin: 0 2.6% 0 23%;
-	width: 74.5%;
+	margin: 0 2.6% 0 26.0%;
+	width: 70.9%;
 }
 
 .left-sidebar #secondary, .page-template-showcase-php #secondary {
 	float: left;
 	margin-left: 0;
 	margin-right: 0;
-	width: 21.2%;
+	width: 23.8%;
 }
 .page-template-showcase-php .recent-posts {float:right; padding-right:2.6%;}
 
