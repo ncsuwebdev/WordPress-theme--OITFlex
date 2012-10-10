@@ -10,8 +10,10 @@ License: GNU General Public License
 License URI: license.txt
 Tags: ncsu, oitdesign, dark, light, white, black, gray, one-column, two-columns, left-sidebar, right-sidebar, fixed-width, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-image-header, featured-images, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
 */
+
 @import url(../twentyeleven/style.css);
 @import url(http://fonts.googleapis.com/css?family=News+Cycle|Oswald);
+
 
 /* =Structure
 ----------------------------------------------- */
@@ -26,6 +28,11 @@ body {
 	border:2px #fff solid;
 
 }
+
+@media screen and (max-device-width:480px) {
+	#page {max-width:480px;}	
+}
+
 #branding hgroup {
 	margin: 0 4.6%;
 	min-height:80px;
@@ -74,6 +81,19 @@ div #secondary, .singular #secondary {
 	margin:3px 0px;
 	width: 23.8%;
 	
+}
+
+/* Showcase */
+.page-template-showcase-php #main .widget-area {
+	float:left;
+	margin:0 -23.8% 0 0;
+	width:23.8%;
+}
+
+.page-template-showcase-php section.recent-posts {
+	float:right;
+	margin:0 !important;
+	width:69%;
 }
 
 /* Singular */
@@ -245,13 +265,13 @@ a {
 
 .entry-title,
 .entry-header .entry-meta {
-	padding-top:10px;
-	padding-right:16px;
+	padding:10px 16px 4px 0px;
+
 }
 .entry-title {
 	font-size: 22px;
 	line-height: 1.em;
-	padding-top: 0px;
+	
 }
 .hentry:last-child,
 .no-results {
@@ -428,13 +448,18 @@ article.intro {
 }
 
 /* Calendar widget */
-table #wp-calendar thread {color:#006666;}
+.widget_calendar #wp-calendar tr {background-color:#fff; width:100%;}
+.widget_calendar #wp-calendar {margin:3px auto; border:solid 1px #ccc;}
+.widget_calendar #wp-calendar caption {color:#fff;}
 
 /* Google Calendar Widget */
 .gce-widget-list .gce-list div span {color:#d1d1d1 !important;}
 .gce-widget-list .gce-list .gce-list-event {background:none !important;}
 .gce-widget-list a {font-weight:normal !important;}
 ul.gce-list li {margin-bottom:10px !important;}
+
+/* Tag Widget */
+.tagcloud {padding:4px;}
 
 /* Search Widget */
 .widget_search {background-color:#c00;}
@@ -450,6 +475,10 @@ ul.gce-list li {margin-bottom:10px !important;}
 	
 	width:152px; 
 }
+
+.widget_search h3 {display:none;}
+
+input[type="text"] {border:none;}
 
 /* =Footer
 ----------------------------------------------- */

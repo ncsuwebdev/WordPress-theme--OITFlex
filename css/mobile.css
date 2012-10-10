@@ -1,0 +1,130 @@
+/* Mobile version of OIT Flex theme */
+
+@import url(../../twentyeleven/style.css);
+@import url(http://fonts.googleapis.com/css?family=News+Cycle|Oswald);
+
+/* =Structure
+----------------------------------------------- */
+body {
+	padding: 0 2em;
+}
+#page {
+	margin: 0em auto;
+	max-width:480px;
+	margin-top:6px;
+}
+
+
+/* =Widgets
+----------------------------------------------- */
+
+.widget-area {
+	font-size: 12px;
+}
+.widget {
+	clear: both;
+	margin: 0;
+	min-width:200px;
+	background:#666666;
+	border:solid 3px #efe9e4;
+	font-weight:100;
+	color:#fff;
+}
+.widget a {
+	color:#ccc;
+	font-weight:bold;
+}
+.widget-title {
+	padding:10px 5px;
+	color: #fff;
+	background:#333333;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: 0.1em;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+.widget ul {
+	padding:4px 8px;
+	list-style-type:none;
+}
+.widget ul li {color:#fff;}
+.widget ul ul {
+	margin-left: 1.0em;
+}
+
+.widget a:hover,
+.widget a:focus,
+.widget a:active {
+	text-decoration: underline;
+}
+
+/* Showcase sidebar widget */
+.textwidget {
+	padding: 4px;
+	font-size:1.15em;
+	letter-spacing:.1em;	
+}
+
+/* Contact sidebar widget */
+.widget_custom-contact-forms input,
+.widget_custom-contact-forms textarea {
+	max-width:170px !important;
+}
+
+/* Calendar widget */
+.widget_calendar #wp-calendar tr {background-color:#fff; width:100%;}
+.widget_calendar #wp-calendar {margin:3px auto; border:solid 1px #ccc;}
+.widget_calendar #wp-calendar caption {color:#fff;}
+
+/* Google Calendar Widget */
+.gce-widget-list .gce-list div span {color:#d1d1d1 !important;}
+.gce-widget-list .gce-list .gce-list-event {background:none !important;}
+.gce-widget-list a {font-weight:normal !important;}
+ul.gce-list li {margin-bottom:10px !important;}
+
+/* Tag Widget */
+.tagcloud {padding:4px;}
+
+/* Search Widget */
+.widget_search {background-color:#c00;}
+.widget_search form {
+	margin: 1em 1.625em;
+	background-color:#fff;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
+	-moz-box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
+	box-shadow: inset 0px -1px 1px rgba(0, 0, 0, 0.09);
+}
+.widget_search #s {
+	
+	width:152px; 
+}
+
+.widget_search h3 {display:none;}
+
+input[type="text"] {border:none;}
+
+
+/* =Footer
+----------------------------------------------- */
+#supplementary {
+	border: none;
+	background-color:#c00;
+	padding: 0.925em 2.6%;
+	overflow: hidden;
+	font-size:.85em;
+} 
+
+#supplementary aside ul a {font-weight:normal;}
+
+
+/* RSS footer widget */
+#supplementary aside.widget_rss {text-align:left;}
+
+#supplementary .widget, #supplementary .widget-title  {
+	border:none; background:none; 
+}
+#supplementary div {text-align:center;color:#fff;}
+#supplementary div a {color:#fff;}
+
