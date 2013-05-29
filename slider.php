@@ -1,14 +1,15 @@
 <?php
 /**
- * Template Name: No header/sidebar Template
- * Description: A Page Template that hides the header graphic and sidebar
+ * Template Name: Slider Template
+ * Description: The Slider template can be used to display a slider in place of the header image that will profile all "feature" posts.
+ *
  *
  * @package WordPress
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
 
-get_header(plain); ?>
+get_header(slider); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
@@ -23,7 +24,7 @@ get_header(plain); ?>
 
 			</div><!-- #content -->
 		</div><!-- #primary -->
-		<?php //get_sidebar(); ?>
+		<?php get_sidebar(); ?>
 	
         
 <?php get_footer(); ?>

@@ -16,6 +16,44 @@ function remove_twentyeleven_options() {
 
 }
 
+// REMOVE SHOWCASE TEMPLATE
+
+$_templates_to_remove = array();
+
+function remove_template( $files_to_delete = array() ){
+    if ( is_scalar( $files_to_delete ) ) $files_to_delete = array( $files_to_delete );
+
+	global $_templates_to_remove;
+	$_templates_to_remove = array_unique(array_merge($_templates_to_remove, $files_to_delete));
+
+	add_action('admin_print_footer_scripts', '_remove_template_footer_scripts');
+}
+
+function _remove_template_footer_scripts() {
+	global $_templates_to_remove;
+
+	if ( ! $_templates_to_remove ) { return; }
+	?>
+	<script type="text/javascript">
+	jQuery(function($) {
+		var tpls = <?php echo json_encode($_templates_to_remove); ?>;
+		$.each(tpls, function(i, tpl) {
+			$('select[name="page_template"] option[value="'+ tpl +'"]').remove();
+		});
+	});
+	</script>
+	<?php
+}
+
+add_action('admin_head-post.php', 'remove_parent_templates');
+add_action('admin_head-post-new.php', 'remove_parent_templates');
+
+function remove_parent_templates() {
+	remove_template(array(
+		'showcase.php'
+	));
+}
+
 // REMOVE TWENTY ELEVEN DEFAULT HEADER IMAGES
 function wptips_remove_header_images() {
     unregister_default_headers( array('wheel','shore','trolley','pine-cone','chessboard','lanterns','willow','hanoi')
@@ -192,6 +230,17 @@ function self_deprecating_sidebar_registration(){
 }
 
 add_action( 'wp_loaded', 'self_deprecating_sidebar_registration' );
+
+// ADD CATEGORY FOR IMAGE PLAYER TOOL
+function create_my_cat () {
+    if (file_exists (ABSPATH.'/wp-admin/includes/taxonomy.php')) {
+        require_once (ABSPATH.'/wp-admin/includes/taxonomy.php'); 
+        if ( ! get_cat_ID( 'Feature' ) ) {
+            wp_create_category( 'Feature' );
+        }
+    }
+}
+add_action ( 'after_setup_theme', 'create_my_cat' );
 
 // THEME UPDATES
 
