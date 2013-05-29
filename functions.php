@@ -54,6 +54,14 @@ function remove_parent_templates() {
 	));
 }
 
+// REMOVE SHOWCASE SIDEBAR
+
+function remove_some_sidebar(){
+	unregister_sidebar( 'sidebar-2' );
+}
+
+add_action( 'widgets_init', 'remove_some_sidebar', 11 );
+
 // MODIFY TWENTY ELEVEN EXCERPT LENGTH FILTER
 
 remove_filter( 'excerpt_length', 'twentyeleven_excerpt_length' ); 
