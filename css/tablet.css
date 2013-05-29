@@ -131,6 +131,6 @@ input[type="text"] {border:none;}
 /* =Slider 
 ----------------------------------------------*/
 #player {width:100%;}
-#player ul.tabsList {position:absolute; bottom:16px; left:4px; float:left;}
+#player ul.tabsList {position:absolute; top:16px; left:4px; float:left;}
 #player .media.crop {width:100%;}
-#player .media .caption {position:absolute; left:0px; top:0px; width:30%; }
+#player .media .caption {position:absolute; left:0px; top:175px; height:100px; width:100%;}

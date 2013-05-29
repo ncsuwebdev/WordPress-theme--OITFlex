@@ -54,6 +54,14 @@ function remove_parent_templates() {
 	));
 }
 
+// MODIFY TWENTY ELEVEN EXCERPT LENGTH FILTER
+
+remove_filter( 'excerpt_length', 'twentyeleven_excerpt_length' ); 
+//add_filter('excerpt_length', 'new_excerpt_length');
+//function new_excerpt_length($length) {
+//  return 50;
+//}
+
 // REMOVE TWENTY ELEVEN DEFAULT HEADER IMAGES
 function wptips_remove_header_images() {
     unregister_default_headers( array('wheel','shore','trolley','pine-cone','chessboard','lanterns','willow','hanoi')

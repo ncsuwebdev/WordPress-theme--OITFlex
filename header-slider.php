@@ -106,15 +106,15 @@
 									<?php the_post_thumbnail('wide-featured-thumbnail');?>
                                     <div class="caption">
                                     <div class="copy">
-                                    	<h3><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'sandbox'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a></h3>
-                                        <?php the_excerpt( __( 'Read More <span class="meta-nav">&raquo;</span>', 'sandbox' ) ) ?>
+                                    	<h3><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'twentyeleven'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a></h3>
+                                        <?php the_excerpt( __( 'Read More <span class="meta-nav">&raquo;</span>', 'twentyeleven' ) ) ?>
                                     </div></div>
 							 </div>
                            
                        <?php else: ?>    
                         <div class="copy">
-                            <h3><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'sandbox'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a></h3>
-                            <?php the_excerpt( __( 'Read More <span class="meta-nav">&raquo;</span>', 'sandbox' ) ) ?>
+                            <h3><a href="<?php the_permalink() ?>" title="<?php printf( __('Permalink to %s', 'twentyeleven'), the_title_attribute('echo=0') ) ?>" rel="bookmark"><?php the_title() ?></a></h3>
+                            <?php the_excerpt( __( 'Read More <span class="meta-nav">&raquo;</span>', 'twentyeleven' ) ) ?>
                         </div>
                         <?php endif; ?>
                                                

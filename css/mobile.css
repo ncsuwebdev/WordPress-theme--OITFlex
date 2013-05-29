@@ -130,7 +130,7 @@ input[type="text"] {border:none;}
 
 /* =Slider 
 ----------------------------------------------*/
-#player {width:100%; height:400px;}
-#player ul.tabsList {position:absolute; top:18px; left:4px; float:left;}
+#player {width:100%; height:200px;}
+#player ul.tabsList {position:absolute; top:16px; left:4px; float:left;}
 #player .media.crop {width:100%; height:200px}
-#player .media .caption {position:absolute; left:0px; top:200px; height:200px; width:100%; }
+#player .media .caption {position:absolute; left:0px; top:100px; height:100px; width:100%;}
