@@ -13,10 +13,10 @@
 <html id="ie6" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if IE 7]>
-<html id="ie7" <?php language_attributes(); ?>>
+<html id="ie7" <?php language_attributes(); ?>><meta http-equiv="X-UA-Compatible" content="IE=7" />
 <![endif]-->
 <!--[if IE 8]>
-<html id="ie8" <?php language_attributes(); ?>>
+<html id="ie8" <?php language_attributes(); ?>><meta http-equiv="X-UA-Compatible" content="IE=8" />
 <![endif]-->
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
@@ -24,7 +24,6 @@
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
