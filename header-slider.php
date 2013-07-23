@@ -48,17 +48,20 @@
 	?></title>
     <!-- CORE CSS -->
 <link rel="profile" href="http://gmpg.org/xfn/11" />
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 769px)" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/player.css" media="screen" rel="stylesheet" type="text/css" />
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 768px)" href="<?php echo get_stylesheet_directory_uri(); ?>/css/tablet.css" />
 <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="<?php echo get_stylesheet_directory_uri(); ?>/css/mobile.css" />
+<!--<![endif]-->
+<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/player.css" media="screen" rel="stylesheet" type="text/css" />
 
-<!-- Core JS -->
+<!-- CORE JS -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/ariaTabs3b.js" type="text/javascript"></script>  
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <![endif]-->
 <?php 
 	/* PHP and js to fix keyboard focus behavior for nav */
