@@ -20,10 +20,11 @@
 <![endif]-->
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
+<meta name="viewport" content="width=device-width" />
 <!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta name="viewport" content="width=device-width" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -54,6 +55,7 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 769px)" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <![endif]-->
 <?php 
 	/* PHP and js to fix keyboard focus behavior for nav */
