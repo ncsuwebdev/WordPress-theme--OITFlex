@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 /**
  * The a no-banner, one-column header for our theme.
@@ -8,23 +9,23 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
-?><!DOCTYPE html>
+?>
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if IE 7]>
-<html id="ie7" <?php language_attributes(); ?>><meta http-equiv="X-UA-Compatible" content="IE=7" />
+<html id="ie7" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if IE 8]>
-<html id="ie8" <?php language_attributes(); ?>><meta http-equiv="X-UA-Compatible" content="IE=8" />
+<html id="ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <html <?php language_attributes(); ?>>
-<meta name="viewport" content="width=device-width" />
 <!--<![endif]-->
 <head>
+<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width" />
 <title><?php
 	/*
 	 * Print the <title> tag based on what is being viewed.
@@ -55,7 +56,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<link rel="stylesheet" type="text/css" media="screen and (min-width: 769px)" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <![endif]-->
 <?php 
 	/* PHP and js to fix keyboard focus behavior for nav */
