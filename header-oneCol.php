@@ -50,7 +50,7 @@
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 769px)" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<!--[if lt IE 9]><!-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
 <link rel="stylesheet" type="text/css" media="screen and (max-width: 480px)" href="<?php echo get_stylesheet_directory_uri(); ?>/css/mobile.css" />
 <link rel="stylesheet" type="text/css" media="screen and (min-width: 481px) and (max-width: 768px)" href="<?php echo get_stylesheet_directory_uri(); ?>/css/tablet.css" />
 <!--<![endif]-->
