@@ -3,6 +3,8 @@
 // CHANGE THE HEADER HEIGHT
 	// Add a filter to twentyeleven_header_image_width and twentyeleven_header_image_height to change these values.
 	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentyeleven_header_image_width', 1000 ) );
+	//remove_filter( 'HEADER_IMAGE_WIDTH', 'twentyeleven_header_image_width' );
+	//define( 'HEADER_IMAGE_WIDTH', apply_filters( 'child_header_image_width', 230 ) );
 	//define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'twentyeleven_header_image_height', 288 ) );
 	remove_filter( 'HEADER_IMAGE_HEIGHT', 'twentyeleven_header_image_height' );
 	define( 'HEADER_IMAGE_HEIGHT', apply_filters( 'child_header_image_height', 230 ) );
