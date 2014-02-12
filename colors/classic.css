@@ -107,3 +107,9 @@ body {
 	color:#d1d1d1;
 }
 
+@media print {
+
+.skip-link, #ncstate-branding-bar-container, #branding, #access, #secondary, #supplementary {display:none !important;}
+   
+}
+

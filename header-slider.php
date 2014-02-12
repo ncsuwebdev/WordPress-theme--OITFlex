@@ -82,7 +82,7 @@
 	 */
 	wp_head();
 ?>
-
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
 
 </head>
 
@@ -96,7 +96,7 @@
             </hgroup>
 
 <!-- begin image slider -->
-	<?php query_posts( 'category_name=feature&&posts_per_page=5' ); ?>
+	<?php query_posts( array ( 'category_name' => 'feature', 'posts_per_page' => '5', 'order' => 'ASC', 'orderby' => 'meta_value', 'meta_key' => 'slider-order') ); ?>
        <?php if ( have_posts()) : ?>
     
        <div id="player">      

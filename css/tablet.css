@@ -163,7 +163,19 @@ input[type="text"] {border:none;}
 
 /* =Slider 
 ----------------------------------------------*/
+#player {display:none;}
+/*
 #player {width:100%;}
 #player ul.tabsList {position:absolute; top:16px; left:4px; float:left;}
 #player .media.crop {width:100%;}
 #player .media .caption {position:absolute; left:0px; top:175px; height:100px; width:100%;}
+*/
+
+/* PRINT 
+----------------------------------------------*/
+
+@media print {
+
+.skip-link, #ncstate-branding-bar-container, #branding, #access, #secondary, #supplementary {display:none;}
+   
+}
