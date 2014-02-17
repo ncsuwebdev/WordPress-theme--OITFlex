@@ -96,13 +96,18 @@
             </hgroup>
 
 <!-- begin image slider -->
-	<?php query_posts( array ( 'category_name' => 'feature', 'posts_per_page' => '5', 'order' => 'ASC', 'orderby' => 'meta_value', 'meta_key' => 'slider-order') ); ?>
+	<?php //query_posts( array ( 'category_name' => 'feature', 'posts_per_page' => '5', 'order' => 'ASC', 'orderby' => 'meta_value', 'meta_key' => 'slider-order') ); ?>
+    <?php $args = array( 'category_name' => 'feature', 'posts_per_page' => '5');
+    		$query = new WP_Query($args); 
+    ?>
+
        <?php if ( have_posts()) : ?>
     
        <div id="player">      
             <div id="tabs">
                 
-				<?php while ( have_posts() ) : the_post() ?>                         
+				<?php //while ( have_posts() ) : the_post() ?> 
+				<?php while ($query->have_posts()) : $query->the_post(); ?>                        
                     <div id="tabs-<?php the_id() ?>">
                     	<?php if (has_post_thumbnail()): ?>
                             <div class="media crop">
@@ -147,6 +152,8 @@
             
         </div> 
         <?php endif; ?>
+
+
 <!-- end image slider -->
 
 			<?php
