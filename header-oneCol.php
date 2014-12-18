@@ -23,7 +23,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php
@@ -105,7 +105,7 @@
 						echo get_the_post_thumbnail( $post->ID, 'full' );
 						?></div><?php
 					else : ?>
-					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="banner" />
 				<?php endif; // end check for featured image or standard header ?>
 			<?php endif; // end check for removed header image ?>
 

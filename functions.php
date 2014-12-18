@@ -1,5 +1,6 @@
 <?php
 
+
 // CHANGE THE HEADER HEIGHT
 	// Add a filter to twentyeleven_header_image_width and twentyeleven_header_image_height to change these values.
 	define( 'HEADER_IMAGE_WIDTH', apply_filters( 'twentyeleven_header_image_width', 1000 ) );
@@ -175,38 +176,38 @@ add_action( 'twentyeleven_enqueue_color_scheme', 'ncsubrand_enqueue_color_scheme
 function ncsubrand_color_scheme($color_schemes) {
     $color_schemes['light'] = array(
         'value' => 'light',
-        'label' => __( 'Light', 'twentyeleven' ),
-        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/light.png',
+        'label' => __( 'Gray Blocks', 'twentyeleven' ),
+        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/gray-blocks.png',
         'default_link_color' => '#a00'
     );
 	 $color_schemes['dark'] = array(
         'value' => 'dark',
-        'label' => __( 'Dark', 'twentyeleven' ),
-        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/dark.png',
+        'label' => __( 'Black Background', 'twentyeleven' ),
+        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/dark-new.png',
         'default_link_color' => '#a00'
     );
 	$color_schemes['classic'] = array(
         'value' => 'classic',
         'label' => __( 'Classic', 'twentyeleven' ),
-        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/classic.png',
+        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/classic-new.png',
         'default_link_color' => '#a00'
     );
 	$color_schemes['classic-dark'] = array(
         'value' => 'classic-dark',
         'label' => __( 'Classic Dark', 'twentyeleven' ),
-        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/classic-dark.png',
+        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/classic-dark-new.png',
         'default_link_color' => '#a00'
     );
 	$color_schemes['beige'] = array(
         'value' => 'beige',
-        'label' => __( 'Beige', 'twentyeleven' ),
-        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/beige.png',
+        'label' => __( 'Red Blocks', 'twentyeleven' ),
+        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/red-blocks.png',
         'default_link_color' => '#a00'
     );
 	$color_schemes['fall'] = array(
         'value' => 'fall',
-        'label' => __( 'Fall', 'twentyeleven' ),
-        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/fall.png',
+        'label' => __( 'Pale Gray Background', 'twentyeleven' ),
+        'thumbnail' => get_stylesheet_directory_uri() . '/images/theme-screenshots/pale-gray.png',
         'default_link_color' => '#a00'
     );
     return $color_schemes;
@@ -232,6 +233,9 @@ function ncsubrand_enqueue_color_scheme( $color_scheme ) {
 	if ( 'fall' == $color_scheme )
         wp_enqueue_style( 'fall', get_stylesheet_directory_uri() . '/colors/fall.css', array(), null );
 }
+
+
+
 
 // ADD ALTERNATE SIDEBAR OPTION; CALLS AFTER ALL OTHER SIDEBARS HAVE BEEN LOADED
 

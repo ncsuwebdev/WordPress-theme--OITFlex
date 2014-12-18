@@ -22,7 +22,7 @@
 <html <?php language_attributes(); ?>>
 <!--<![endif]-->
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width" />
 <title><?php
@@ -62,7 +62,7 @@
 	/* PHP and js to fix keyboard focus behavior for nav */
 	include("js/cc-accessible-dropdown-menus.php"); 
 ?>
-
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?maxWidth=1100&color=gray"></script>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -78,6 +78,7 @@
 	wp_head();
 ?>
 <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+<link href="https://cdn.ncsu.edu/brand-assets/fonts/include.css" rel="stylesheet" type="text/css" />
 
 </head>
 
@@ -85,6 +86,7 @@
 				
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
+	
 			<hgroup>    
     			<h1 id="site-title" aria-level="1" role="heading"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
        			<h2 id="site-description" aria-level="2"><?php bloginfo( 'description' ); ?></h2>
@@ -107,7 +109,7 @@
 						echo get_the_post_thumbnail( $post->ID, 'full' );
 						?></div><?php
 					else : ?>
-					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="" />
+					<img src="<?php header_image(); ?>" width="<?php echo HEADER_IMAGE_WIDTH; ?>" height="<?php echo HEADER_IMAGE_HEIGHT; ?>" alt="banner" />
 				<?php endif; // end check for featured image or standard header ?>
 			<?php endif; // end check for removed header image ?>
 

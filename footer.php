@@ -22,9 +22,9 @@
 					get_sidebar( 'footer' );
 			?>
 
-			<div id="supplementary">
+			<div id="supplementary" class="credits">
 				<?php do_action( 'twentyeleven_credits' ); ?>
-				<div>Copyright &copy; <?php echo date('Y'); ?> | <a href="http://ncsu.edu" target="NCSU">NC State University</a> | <a href="http://oit.ncsu.edu/itaccess/legislation-and-policies" target="_blank">Accessibility</a> | <a href="http://www.ncsu.edu/privacy/" target="_blank">Privacy</a> | <a href="http://policies.ncsu.edu/" target="_blank">University Policies</a> | <?php wp_loginout(); ?> <!--| <a href="<?php //echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php //esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php //printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>--></div>
+				<div>Copyright &copy; <?php echo date('Y'); ?> | <a href="http://ncsu.edu" target="NCSU">NC State University</a> | <a href="http://oit.ncsu.edu/itaccess/legislation-and-policies" target="Accessibility">Accessibility</a> | <a href="http://www.ncsu.edu/privacy/" target="Privacy">Privacy</a> | <a href="http://policies.ncsu.edu/" target="Policies">University Policies</a> | <?php wp_loginout(); ?> <!--| <a href="<?php //echo esc_url( __( 'http://wordpress.org/', 'twentyeleven' ) ); ?>" title="<?php //esc_attr_e( 'Semantic Personal Publishing Platform', 'twentyeleven' ); ?>" rel="generator"><?php //printf( __( 'Proudly powered by %s', 'twentyeleven' ), 'WordPress' ); ?></a>--></div>
 			</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->

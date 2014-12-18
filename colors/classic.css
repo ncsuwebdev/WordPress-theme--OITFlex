@@ -1,6 +1,6 @@
 /*
 	A NC State brand-friendly color theme alternative
-	Blue with beige accents
+	Plenty of red and the full logo
 */
 
 
@@ -10,31 +10,33 @@ body {
 	background: #fff;
 	color: #333;
 }
-#page {
-	border:solid 1px #e1e1e1;
-}
-
-/* Links */
-
-
 
 /* =Header
 ----------------------------------------------- */
-#branding, #supplementary, .widget_search {
-	background-color:#c80000 !important;
+#branding, .widget_search {
+	background-color:#fff !important;
+	background: url(../images/logos/ncstate-brick-2x2-red-min.png) no-repeat 30px 26px;
 }
+
 #site-title a {
-	color: #fff;
+	color: #000;
 }
 #site-title a:hover,
 #site-title a:focus,
 #site-title a:active {
-	color:#eee !important;
+	color:#666 !important;
 }
 
 #site-description {
-	color: #fff;
+	color: #333;
 }
+
+/* =Slider Header
+----------------------------------------------- */
+
+#player {border-bottom:solid 1px #999;}
+
+#player .media .caption {background:#f2f2f2;}
 
 
 
@@ -42,11 +44,12 @@ body {
 ----------------------------------------------- */
 
 #access {
-	background: #333; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#383838, #272727);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#383838), to(#272727)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#383838, #272727);
-	
+	background: #fff;
+}
+
+#access ul ul a:hover {
+	background: #c00 !important; 
+	color:#fff !important;
 }
 
 /* =Content
@@ -60,20 +63,15 @@ body {
 ----------------------------------------------- */
 /* default widget colors */
 .widget {
-	background:#A79574;
-	border:solid 3px #e5e1d0;
-	font-weight:100;
-	color:#fff;
+	margin:4px;
+	color:#333;
 }
 .widget a {
-	color:#fff;
+	color:#666;
 	font-weight:bold;
 }
 .widget-title {
-	color: #fff;
-	background:#5c5441;
-	font-size: 12px;
-	font-weight: 500;
+	color: #a20000;
 }
 
 /* base widgets can be customized to brand colors
@@ -85,10 +83,10 @@ body {
 */
 
 /* Meta Widget */
-.widget_meta, .widget_nav_menu {background:#999;}
+.widget_meta, .widget_nav_menu {}
 .widget_meta .widget-title,
 .widget_nav_menu .widget-title
- {background-color:#333;}
+ {}
 
 /* Search Widget */
 .widget_search {
@@ -98,13 +96,14 @@ body {
 /* =Footer
 ----------------------------------------------- */
 
-#supplementary {
-	border: none;
+#supplementary {background-color: #c00; font-family:UniversLight, Arial, sans-serif;}
+#supplementary.credits {
 	color:#d1d1d1;
+	background-color: #900;
 }
 
-#supplementary a {
-	color:#d1d1d1;
+#supplementary a, #supplementary .widget-title  {
+	color:#f2f2f2;
 }
 
 @media print {

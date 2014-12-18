@@ -30,14 +30,14 @@ function reviseStyles() {
    #access a:focus,
    #access ul ul :focus {
    	outline:1;
-	background:#e1e1e1;
+	background:#fff;
 	color:#373737;
    }
    
    #access li.hover > a,
    #access ul ul .hover > a {
    	outline:1;
-	background:#e1e1e1;
+	background:#fff;
 	color:#373737;
    }
    

@@ -1,6 +1,7 @@
+
 /*
 	A NC State brand-friendly color theme alternative
-	Blue with beige accents
+	Heavy gray image border with extra nav decoration; dark footer; white-back logo
 */
 
 
@@ -10,46 +11,64 @@ body {
 	background: #fff;
 	color: #333;
 }
-#page {
-	border:solid 1px #e5e1d0;
-
-}
-
-/* Links */
-
-
 
 /* =Header
 ----------------------------------------------- */
-
-#branding, #supplementary, .widget_search {
-	background-color:#c5bd9d !important;
+#branding {
+	background-color:#fff !important;
+	background: url(../images/logos/ncstate-type-2x2-blk-min.png) no-repeat 30px 26px;
 }
+
+#branding img {margin-left:-8px;}
+
 #site-title a {
-	color: #383838;
+	color: #000;
 }
 #site-title a:hover,
 #site-title a:focus,
 #site-title a:active {
-	color:#5c5541 !important;
+	color:#666 !important;
 }
 
 #site-description {
-	color: #383838;
+	color: #333;
 }
 
+#branding img {
+	border: solid 10px #333;
+}
 
+/* =Slider Header
+----------------------------------------------- */
+
+.page-template-slider #branding img, #branding .banner-height img {
+	border: none;
+}
+#player, #branding .banner-height {border:solid 10px #333;}
+
+#branding .banner-height {margin-left:-8px;}
+#branding .banner-height img {margin:0;}
 
 /* =Menu
 ----------------------------------------------- */
 
 #access {
-	background: #333; /* Show a solid color for older browsers */
-	background: -moz-linear-gradient(#383838, #272727);
-	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#383838), to(#272727)); /* older webkit syntax */
-	background: -webkit-linear-gradient(#383838, #272727);
-	
+	background: #fff;
+	border-bottom: solid 4px #000;
+	margin-bottom:12px;
 }
+
+#access ul ul a:hover {
+	background: #333 !important; 
+	color:#fff !important;
+}
+
+#access li.current-menu-item {
+	background-color:#333;
+}
+#access li.current-menu-item a {color:#fff;}
+#access ul.sub-menu li a {color: #000;}
+
 
 /* =Content
 ----------------------------------------------- */
@@ -62,26 +81,19 @@ body {
 ----------------------------------------------- */
 /* default widget colors */
 .widget {
-	background:#9a7;
-	border:solid 3px #e5e1d0;
-	font-weight:100;
-	color:#fff;
+	margin:4px;
+	color:#333;
 }
 .widget a {
-	color:#fff;
+	color:#666;
 	font-weight:bold;
 }
 .widget-title {
+	background-color: #333;
 	color: #fff;
-	background:#785;
-	font-size: 12px;
-	font-weight: 500;
+	padding:12px 8px 6px 10px;
+	border-bottom:#000 solid 4px;
 }
-
-/*alt menus widget colors */
-.widget_nav_menu {background:#67849c;}
-
-.widget_nav_menu .widget-title {background:#567}
 
 /* base widgets can be customized to brand colors
 .widget_nav_menu
@@ -92,9 +104,10 @@ body {
 */
 
 /* Meta Widget */
-.widget_meta  {background:#666;}
-.widget_meta .widget-title
- {background-color:#383838;}
+.widget_meta, .widget_nav_menu {}
+.widget_meta .widget-title,
+.widget_nav_menu .widget-title
+ {}
 
 /* Search Widget */
 .widget_search {
@@ -104,12 +117,18 @@ body {
 /* =Footer
 ----------------------------------------------- */
 
-#supplementary {
-	border: none;
-	color:#383838;
+#supplementary {background-color: #333; font-family:UniversLight, Arial, sans-serif;}
+#supplementary.credits {
+	color:#d1d1d1;
+	background-color: #000;
 }
 
-#supplementary a {
-	color:#5c5541;
+#supplementary a, #supplementary .widget-title  {
+	color:#d2d2d2;
 }
 
+@media print {
+
+.skip-link, #ncstate-branding-bar-container, #branding, #access, #secondary, #supplementary {display:none !important;}
+   
+}
