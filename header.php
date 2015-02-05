@@ -58,11 +58,11 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <![endif]-->
+<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?maxWidth=1100&color=gray"></script>
 <?php 
 	/* PHP and js to fix keyboard focus behavior for nav */
 	include("js/cc-accessible-dropdown-menus.php"); 
 ?>
-<script src="https://cdn.ncsu.edu/brand-assets/utility-bar/ub.php?maxWidth=1100&color=gray"></script>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -83,6 +83,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div id="ncstate-utility-bar"></div>
 				
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">

@@ -131,4 +131,4 @@
 	</header><!-- #branding -->
 
 
-	<div id="main">
+	<div id="main" tabindex=”-1”>

@@ -10,7 +10,7 @@
 get_header(); ?>
 
 		<div id="primary">
-			<div id="content" role="main">
+			<div id="content" role="main" tabindex=”-1”>
 
 				<?php while ( have_posts() ) : the_post(); ?>
 

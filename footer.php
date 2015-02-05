@@ -37,5 +37,17 @@
  });
 </script>
 
+<script>
+var a = document.createElement('a');
+var linkText = document.createTextNode("Skip to content");
+a.appendChild(linkText);
+a.title = "Skip to content";
+a.href = "#main";
+a.className = "assistive-text"
+
+var body = document.body;
+body.insertBefore(a, body.firstChild);
+</script>
+
 </body>
 </html>
